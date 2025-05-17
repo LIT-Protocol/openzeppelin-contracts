@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 5.4.0 (2025-05-17)
+## 5.3.1 (2025-05-17)
 
 - `ERC7739`: An abstract contract to validate signatures following the rehashing scheme from `ERC7739Utils`. ([#5664](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5664))
 - `ERC7739Utils`: Add a library that implements a defensive rehashing mechanism to prevent replayability of smart contract signatures based on the ERC-7739. ([#5664](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5664))
