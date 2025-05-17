@@ -1,5 +1,13 @@
 # Changelog
 
+
+## 5.4.0 (2025-05-17)
+
+- `ERC7739`: An abstract contract to validate signatures following the rehashing scheme from `ERC7739Utils`. ([#5664](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5664))
+- `ERC7739Utils`: Add a library that implements a defensive rehashing mechanism to prevent replayability of smart contract signatures based on the ERC-7739. ([#5664](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5664))
+- `Arrays`: Add `unsafeAccess`, `unsafeMemoryAccess` and `unsafeSetLength` for `bytes[]` and `string[]`. ([#5568](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5568))
+- `Blockhash`: Add a library that provides access to historical block hashes using EIP-2935's history storage, extending the standard 256-block limit to 8191 blocks. ([#5642](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5642))
+
 ## 5.3.0 (2025-04-09)
 
 ### Breaking Changes
