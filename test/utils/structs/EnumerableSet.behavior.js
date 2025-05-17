@@ -8,6 +8,7 @@ function shouldBehaveLikeSet() {
 
     expect(await Promise.all(values.map((_, index) => methods.at(index)))).to.have.deep.members(values);
     expect([...(await methods.values())]).to.have.deep.members(values);
+    expect([...(await methods.limitedValuesFrom(values.length, 0))]).to.have.deep.members(values);
   }
 
   it('starts empty', async function () {

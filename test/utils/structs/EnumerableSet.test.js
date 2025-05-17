@@ -32,6 +32,7 @@ async function fixture() {
           length: `$length_EnumerableSet_${name}(uint256)`,
           at: `$at_EnumerableSet_${name}(uint256,uint256)`,
           values: `$values_EnumerableSet_${name}(uint256)`,
+          limitedValuesFrom: `$limitedValuesFrom_EnumerableSet_${name}(uint256,uint256,uint256)`,
         }),
         events: {
           addReturn: `return$add_EnumerableSet_${name}_${type}`,

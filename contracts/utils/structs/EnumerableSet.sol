@@ -171,6 +171,24 @@ library EnumerableSet {
         return set._values;
     }
 
+    /**
+     * @dev Returns a limited number of values from a set, starting from an offset.
+     * @dev This has been tested to be similar in gas cost as the original _values function, in the worst case scenario.
+     * Feel free to edit the _values function to use eg. `_limitedValuesFrom(set, set._values.length, 0)` to check
+     * again.
+     */
+    function _limitedValuesFrom(
+        Set storage set,
+        uint256 limit,
+        uint256 offset
+    ) private view returns (bytes32[] memory) {
+        bytes32[] memory valuesToReturn = new bytes32[](limit);
+        for (uint256 i = 0; i < limit; i++) {
+            valuesToReturn[i] = set._values[offset + i];
+        }
+        return valuesToReturn;
+    }
+
     // Bytes32Set
 
     struct Bytes32Set {
@@ -245,6 +263,24 @@ library EnumerableSet {
      */
     function values(Bytes32Set storage set) internal view returns (bytes32[] memory) {
         bytes32[] memory store = _values(set._inner);
+        bytes32[] memory result;
+
+        assembly ("memory-safe") {
+            result := store
+        }
+
+        return result;
+    }
+
+    /**
+     * @dev Returns a limited number of values from a set, starting from an offset.
+     */
+    function limitedValuesFrom(
+        Bytes32Set storage set,
+        uint256 limit,
+        uint256 offset
+    ) internal view returns (bytes32[] memory) {
+        bytes32[] memory store = _limitedValuesFrom(set._inner, limit, offset);
         bytes32[] memory result;
 
         assembly ("memory-safe") {
@@ -337,6 +373,24 @@ library EnumerableSet {
         return result;
     }
 
+    /**
+     * @dev Returns a limited number of values from a set, starting from an offset.
+     */
+    function limitedValuesFrom(
+        AddressSet storage set,
+        uint256 limit,
+        uint256 offset
+    ) internal view returns (address[] memory) {
+        bytes32[] memory store = _limitedValuesFrom(set._inner, limit, offset);
+        address[] memory result;
+
+        assembly ("memory-safe") {
+            result := store
+        }
+
+        return result;
+    }
+
     // UintSet
 
     struct UintSet {
@@ -411,6 +465,24 @@ library EnumerableSet {
      */
     function values(UintSet storage set) internal view returns (uint256[] memory) {
         bytes32[] memory store = _values(set._inner);
+        uint256[] memory result;
+
+        assembly ("memory-safe") {
+            result := store
+        }
+
+        return result;
+    }
+
+    /**
+     * @dev Returns a limited number of values from a set, starting from an offset.
+     */
+    function limitedValuesFrom(
+        UintSet storage set,
+        uint256 limit,
+        uint256 offset
+    ) internal view returns (uint256[] memory) {
+        bytes32[] memory store = _limitedValuesFrom(set._inner, limit, offset);
         uint256[] memory result;
 
         assembly ("memory-safe") {

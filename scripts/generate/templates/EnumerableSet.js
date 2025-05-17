@@ -173,6 +173,24 @@ function _at(Set storage set, uint256 index) private view returns (bytes32) {
 function _values(Set storage set) private view returns (bytes32[] memory) {
     return set._values;
 }
+
+/**
+ * @dev Returns a limited number of values from a set, starting from an offset.
+ * @dev This has been tested to be similar in gas cost as the original _values function, in the worst case scenario.
+ * Feel free to edit the _values function to use eg. \`_limitedValuesFrom(set, set._values.length, 0)\` to check
+ * again.
+ */
+function _limitedValuesFrom(
+    Set storage set,
+    uint256 limit,
+    uint256 offset
+) private view returns (bytes32[] memory) {
+    bytes32[] memory valuesToReturn = new bytes32[](limit);
+    for (uint256 i = 0; i < limit; i++) {
+        valuesToReturn[i] = set._values[offset + i];
+    }
+    return valuesToReturn;
+}
 `;
 
 const customSet = ({ name, type }) => `\
@@ -250,6 +268,24 @@ function at(${name} storage set, uint256 index) internal view returns (${type}) 
  */
 function values(${name} storage set) internal view returns (${type}[] memory) {
     bytes32[] memory store = _values(set._inner);
+    ${type}[] memory result;
+
+    assembly ("memory-safe") {
+        result := store
+    }
+
+    return result;
+}
+
+/**
+ * @dev Returns a limited number of values from a set, starting from an offset.
+ */
+function limitedValuesFrom(
+    ${name} storage set,
+    uint256 limit,
+    uint256 offset
+) internal view returns (${type}[] memory) {
+    bytes32[] memory store = _limitedValuesFrom(set._inner, limit, offset);
     ${type}[] memory result;
 
     assembly ("memory-safe") {
