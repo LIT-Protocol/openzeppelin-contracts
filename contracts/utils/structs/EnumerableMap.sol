@@ -4,7 +4,7 @@
 
 pragma solidity ^0.8.20;
 
-import {EnumerableSet} from "./EnumerableSet.sol";
+import {EnumerableSetViewFriendly} from "./EnumerableSetViewFriendly.sol";
 
 /**
  * @dev Library for managing an enumerable variant of Solidity's
@@ -51,7 +51,7 @@ import {EnumerableSet} from "./EnumerableSet.sol";
  * ====
  */
 library EnumerableMap {
-    using EnumerableSet for EnumerableSet.Bytes32Set;
+    using EnumerableSetViewFriendly for EnumerableSetViewFriendly.Bytes32Set;
 
     // To implement this library for multiple types with as little code repetition as possible, we write it in
     // terms of a generic Map type with bytes32 keys and values. The Map implementation uses private functions,
@@ -65,7 +65,7 @@ library EnumerableMap {
 
     struct Bytes32ToBytes32Map {
         // Storage of keys
-        EnumerableSet.Bytes32Set _keys;
+        EnumerableSetViewFriendly.Bytes32Set _keys;
         mapping(bytes32 key => bytes32) _values;
     }
 

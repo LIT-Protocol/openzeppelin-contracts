@@ -5,7 +5,7 @@ const { TYPES } = require('./EnumerableMap.opts');
 const header = `\
 pragma solidity ^0.8.20;
 
-import {EnumerableSet} from "./EnumerableSet.sol";
+import {EnumerableSetViewFriendly} from "./EnumerableSetViewFriendly.sol";
 
 /**
  * @dev Library for managing an enumerable variant of Solidity's
@@ -66,7 +66,7 @@ error EnumerableMapNonexistentKey(bytes32 key);
 
 struct Bytes32ToBytes32Map {
     // Storage of keys
-    EnumerableSet.Bytes32Set _keys;
+    EnumerableSetViewFriendly.Bytes32Set _keys;
     mapping(bytes32 key => bytes32) _values;
 }
 
@@ -287,7 +287,7 @@ module.exports = format(
   'library EnumerableMap {',
   format(
     [].concat(
-      'using EnumerableSet for EnumerableSet.Bytes32Set;',
+      'using EnumerableSetViewFriendly for EnumerableSetViewFriendly.Bytes32Set;',
       '',
       defaultMap,
       TYPES.map(details => customMap(details)),

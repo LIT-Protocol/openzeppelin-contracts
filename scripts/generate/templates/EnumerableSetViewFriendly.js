@@ -1,6 +1,6 @@
 const format = require('../format-lines');
 const { fromBytes32, toBytes32 } = require('./conversion');
-const { TYPES } = require('./EnumerableSet.opts');
+const { TYPES } = require('./EnumerableSetViewFriendly.opts');
 
 const header = `\
 pragma solidity ^0.8.20;
@@ -22,10 +22,10 @@ import {Arrays} from "../Arrays.sol";
  * \`\`\`solidity
  * contract Example {
  *     // Add the library methods
- *     using EnumerableSet for EnumerableSet.AddressSet;
+ *     using EnumerableSetViewFriendly for EnumerableSetViewFriendly.AddressSet;
  *
  *     // Declare a set state variable
- *     EnumerableSet.AddressSet private mySet;
+ *     EnumerableSetViewFriendly.AddressSet private mySet;
  * }
  * \`\`\`
  *
@@ -38,8 +38,8 @@ import {Arrays} from "../Arrays.sol";
  * unusable.
  * See https://github.com/ethereum/solidity/pull/11843[ethereum/solidity#11843] for more info.
  *
- * In order to clean an EnumerableSet, you can either remove all elements one by one or create a fresh instance using an
- * array of EnumerableSet.
+ * In order to clean an EnumerableSetViewFriendly, you can either remove all elements one by one or create a fresh instance using an
+ * array of EnumerableSetViewFriendly.
  * ====
  */
 `;
@@ -299,7 +299,7 @@ function limitedValuesFrom(
 // GENERATE
 module.exports = format(
   header.trimEnd(),
-  'library EnumerableSet {',
+  'library EnumerableSetViewFriendly {',
   format(
     [].concat(
       defaultSet,
