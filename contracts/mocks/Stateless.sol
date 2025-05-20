@@ -20,7 +20,7 @@ import {Create2} from "../utils/Create2.sol";
 import {DoubleEndedQueue} from "../utils/structs/DoubleEndedQueue.sol";
 import {ECDSA} from "../utils/cryptography/ECDSA.sol";
 import {EnumerableMap} from "../utils/structs/EnumerableMap.sol";
-import {EnumerableSet} from "../utils/structs/EnumerableSet.sol";
+import {EnumerableSetViewFriendly} from "../utils/structs/EnumerableSetViewFriendly.sol";
 import {ERC1155Holder} from "../token/ERC1155/utils/ERC1155Holder.sol";
 import {ERC165} from "../utils/introspection/ERC165.sol";
 import {ERC165Checker} from "../utils/introspection/ERC165Checker.sol";

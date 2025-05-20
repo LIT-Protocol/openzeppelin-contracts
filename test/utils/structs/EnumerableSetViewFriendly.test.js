@@ -3,9 +3,9 @@ const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
 
 const { mapValues } = require('../../helpers/iterate');
 const { generators } = require('../../helpers/random');
-const { TYPES } = require('../../../scripts/generate/templates/EnumerableSet.opts');
+const { TYPES } = require('../../../scripts/generate/templates/EnumerableSetViewFriendly.opts');
 
-const { shouldBehaveLikeSet } = require('./EnumerableSet.behavior');
+const { shouldBehaveLikeSet } = require('./EnumerableSetViewFriendly.behavior');
 
 const getMethods = (mock, fnSigs) => {
   return mapValues(
@@ -17,7 +17,7 @@ const getMethods = (mock, fnSigs) => {
 };
 
 async function fixture() {
-  const mock = await ethers.deployContract('$EnumerableSet');
+  const mock = await ethers.deployContract('$EnumerableSetViewFriendly');
 
   const env = Object.fromEntries(
     TYPES.map(({ name, type }) => [
@@ -27,16 +27,16 @@ async function fixture() {
         methods: getMethods(mock, {
           add: `$add(uint256,${type})`,
           remove: `$remove(uint256,${type})`,
-          clear: `$clear_EnumerableSet_${name}(uint256)`,
+          clear: `$clear_EnumerableSetViewFriendly_${name}(uint256)`,
           contains: `$contains(uint256,${type})`,
-          length: `$length_EnumerableSet_${name}(uint256)`,
-          at: `$at_EnumerableSet_${name}(uint256,uint256)`,
-          values: `$values_EnumerableSet_${name}(uint256)`,
-          limitedValuesFrom: `$limitedValuesFrom_EnumerableSet_${name}(uint256,uint256,uint256)`,
+          length: `$length_EnumerableSetViewFriendly_${name}(uint256)`,
+          at: `$at_EnumerableSetViewFriendly_${name}(uint256,uint256)`,
+          values: `$values_EnumerableSetViewFriendly_${name}(uint256)`,
+          limitedValuesFrom: `$limitedValuesFrom_EnumerableSetViewFriendly_${name}(uint256,uint256,uint256)`,
         }),
         events: {
-          addReturn: `return$add_EnumerableSet_${name}_${type}`,
-          removeReturn: `return$remove_EnumerableSet_${name}_${type}`,
+          addReturn: `return$add_EnumerableSetViewFriendly_${name}_${type}`,
+          removeReturn: `return$remove_EnumerableSetViewFriendly_${name}_${type}`,
         },
       },
     ]),
@@ -45,7 +45,7 @@ async function fixture() {
   return { mock, env };
 }
 
-describe('EnumerableSet', function () {
+describe('EnumerableSetViewFriendly', function () {
   beforeEach(async function () {
     Object.assign(this, await loadFixture(fixture));
   });

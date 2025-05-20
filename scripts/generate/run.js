@@ -35,7 +35,7 @@ for (const [file, template] of Object.entries({
   'utils/cryptography/MerkleProof.sol': './templates/MerkleProof.js',
   'utils/math/SafeCast.sol': './templates/SafeCast.js',
   'utils/structs/Checkpoints.sol': './templates/Checkpoints.js',
-  'utils/structs/EnumerableSet.sol': './templates/EnumerableSet.js',
+  'utils/structs/EnumerableSetViewFriendly.sol': './templates/EnumerableSetViewFriendly.js',
   'utils/structs/EnumerableMap.sol': './templates/EnumerableMap.js',
   'utils/SlotDerivation.sol': './templates/SlotDerivation.js',
   'utils/StorageSlot.sol': './templates/StorageSlot.js',

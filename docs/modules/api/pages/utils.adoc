@@ -21,7 +21,7 @@
 :ERC165Checker: pass:normal[xref:utils.adoc#ERC165Checker[`ERC165Checker`]]
 :BitMaps: pass:normal[xref:utils.adoc#BitMaps[`BitMaps`]]
 :EnumerableMap: pass:normal[xref:utils.adoc#EnumerableMap[`EnumerableMap`]]
-:EnumerableSet: pass:normal[xref:utils.adoc#EnumerableSet[`EnumerableSet`]]
+:EnumerableSetViewFriendly: pass:normal[xref:utils.adoc#EnumerableSetViewFriendly[`EnumerableSetViewFriendly`]]
 :EnumerableMap: pass:normal[xref:utils.adoc#EnumerableMap[`EnumerableMap`]]
 :DoubleEndedQueue: pass:normal[xref:utils.adoc#DoubleEndedQueue[`DoubleEndedQueue`]]
 :CircularBuffer: pass:normal[xref:utils.adoc#CircularBuffer[`CircularBuffer`]]
@@ -53,7 +53,7 @@
 :ERC7739Utils: pass:normal[xref:utils.adoc#ERC7739Utils[`ERC7739Utils`]]
 :Time: pass:normal[xref:utils.adoc#Time[`Time`]]
 :EnumerableMap: pass:normal[xref:utils.adoc#EnumerableMap[`EnumerableMap`]]
-:EnumerableSet: pass:normal[xref:utils.adoc#EnumerableSet[`EnumerableSet`]]
+:EnumerableSetViewFriendly: pass:normal[xref:utils.adoc#EnumerableSetViewFriendly[`EnumerableSetViewFriendly`]]
 :xref-Math-add512-uint256-uint256-: xref:utils.adoc#Math-add512-uint256-uint256-
 :xref-Math-mul512-uint256-uint256-: xref:utils.adoc#Math-mul512-uint256-uint256-
 :xref-Math-tryAdd-uint256-uint256-: xref:utils.adoc#Math-tryAdd-uint256-uint256-
@@ -388,30 +388,30 @@
 :xref-EnumerableMap-get-struct-EnumerableMap-Bytes32ToAddressMap-bytes32-: xref:utils.adoc#EnumerableMap-get-struct-EnumerableMap-Bytes32ToAddressMap-bytes32-
 :xref-EnumerableMap-keys-struct-EnumerableMap-Bytes32ToAddressMap-: xref:utils.adoc#EnumerableMap-keys-struct-EnumerableMap-Bytes32ToAddressMap-
 :xref-EnumerableMap-EnumerableMapNonexistentKey-bytes32-: xref:utils.adoc#EnumerableMap-EnumerableMapNonexistentKey-bytes32-
-:xref-EnumerableSet-add-struct-EnumerableSet-Bytes32Set-bytes32-: xref:utils.adoc#EnumerableSet-add-struct-EnumerableSet-Bytes32Set-bytes32-
-:xref-EnumerableSet-remove-struct-EnumerableSet-Bytes32Set-bytes32-: xref:utils.adoc#EnumerableSet-remove-struct-EnumerableSet-Bytes32Set-bytes32-
-:xref-EnumerableSet-clear-struct-EnumerableSet-Bytes32Set-: xref:utils.adoc#EnumerableSet-clear-struct-EnumerableSet-Bytes32Set-
-:xref-EnumerableSet-contains-struct-EnumerableSet-Bytes32Set-bytes32-: xref:utils.adoc#EnumerableSet-contains-struct-EnumerableSet-Bytes32Set-bytes32-
-:xref-EnumerableSet-length-struct-EnumerableSet-Bytes32Set-: xref:utils.adoc#EnumerableSet-length-struct-EnumerableSet-Bytes32Set-
-:xref-EnumerableSet-at-struct-EnumerableSet-Bytes32Set-uint256-: xref:utils.adoc#EnumerableSet-at-struct-EnumerableSet-Bytes32Set-uint256-
-:xref-EnumerableSet-values-struct-EnumerableSet-Bytes32Set-: xref:utils.adoc#EnumerableSet-values-struct-EnumerableSet-Bytes32Set-
-:xref-EnumerableSet-limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256-: xref:utils.adoc#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256-
-:xref-EnumerableSet-add-struct-EnumerableSet-AddressSet-address-: xref:utils.adoc#EnumerableSet-add-struct-EnumerableSet-AddressSet-address-
-:xref-EnumerableSet-remove-struct-EnumerableSet-AddressSet-address-: xref:utils.adoc#EnumerableSet-remove-struct-EnumerableSet-AddressSet-address-
-:xref-EnumerableSet-clear-struct-EnumerableSet-AddressSet-: xref:utils.adoc#EnumerableSet-clear-struct-EnumerableSet-AddressSet-
-:xref-EnumerableSet-contains-struct-EnumerableSet-AddressSet-address-: xref:utils.adoc#EnumerableSet-contains-struct-EnumerableSet-AddressSet-address-
-:xref-EnumerableSet-length-struct-EnumerableSet-AddressSet-: xref:utils.adoc#EnumerableSet-length-struct-EnumerableSet-AddressSet-
-:xref-EnumerableSet-at-struct-EnumerableSet-AddressSet-uint256-: xref:utils.adoc#EnumerableSet-at-struct-EnumerableSet-AddressSet-uint256-
-:xref-EnumerableSet-values-struct-EnumerableSet-AddressSet-: xref:utils.adoc#EnumerableSet-values-struct-EnumerableSet-AddressSet-
-:xref-EnumerableSet-limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256-: xref:utils.adoc#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256-
-:xref-EnumerableSet-add-struct-EnumerableSet-UintSet-uint256-: xref:utils.adoc#EnumerableSet-add-struct-EnumerableSet-UintSet-uint256-
-:xref-EnumerableSet-remove-struct-EnumerableSet-UintSet-uint256-: xref:utils.adoc#EnumerableSet-remove-struct-EnumerableSet-UintSet-uint256-
-:xref-EnumerableSet-clear-struct-EnumerableSet-UintSet-: xref:utils.adoc#EnumerableSet-clear-struct-EnumerableSet-UintSet-
-:xref-EnumerableSet-contains-struct-EnumerableSet-UintSet-uint256-: xref:utils.adoc#EnumerableSet-contains-struct-EnumerableSet-UintSet-uint256-
-:xref-EnumerableSet-length-struct-EnumerableSet-UintSet-: xref:utils.adoc#EnumerableSet-length-struct-EnumerableSet-UintSet-
-:xref-EnumerableSet-at-struct-EnumerableSet-UintSet-uint256-: xref:utils.adoc#EnumerableSet-at-struct-EnumerableSet-UintSet-uint256-
-:xref-EnumerableSet-values-struct-EnumerableSet-UintSet-: xref:utils.adoc#EnumerableSet-values-struct-EnumerableSet-UintSet-
-:xref-EnumerableSet-limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256-: xref:utils.adoc#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256-
+:xref-EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-: xref:utils.adoc#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-
+:xref-EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-: xref:utils.adoc#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-
+:xref-EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-Bytes32Set-: xref:utils.adoc#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-Bytes32Set-
+:xref-EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-: xref:utils.adoc#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-
+:xref-EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-Bytes32Set-: xref:utils.adoc#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-Bytes32Set-
+:xref-EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-
+:xref-EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-Bytes32Set-: xref:utils.adoc#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-Bytes32Set-
+:xref-EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256-
+:xref-EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-AddressSet-address-: xref:utils.adoc#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-AddressSet-address-
+:xref-EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-AddressSet-address-: xref:utils.adoc#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-AddressSet-address-
+:xref-EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-AddressSet-: xref:utils.adoc#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-AddressSet-
+:xref-EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-AddressSet-address-: xref:utils.adoc#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-AddressSet-address-
+:xref-EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-AddressSet-: xref:utils.adoc#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-AddressSet-
+:xref-EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-AddressSet-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-AddressSet-uint256-
+:xref-EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-AddressSet-: xref:utils.adoc#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-AddressSet-
+:xref-EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256-
+:xref-EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-UintSet-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-UintSet-uint256-
+:xref-EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-UintSet-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-UintSet-uint256-
+:xref-EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-UintSet-: xref:utils.adoc#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-UintSet-
+:xref-EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-UintSet-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-UintSet-uint256-
+:xref-EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-UintSet-: xref:utils.adoc#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-UintSet-
+:xref-EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-UintSet-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-UintSet-uint256-
+:xref-EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-UintSet-: xref:utils.adoc#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-UintSet-
+:xref-EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256-: xref:utils.adoc#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256-
 :xref-DoubleEndedQueue-pushBack-struct-DoubleEndedQueue-Bytes32Deque-bytes32-: xref:utils.adoc#DoubleEndedQueue-pushBack-struct-DoubleEndedQueue-Bytes32Deque-bytes32-
 :xref-DoubleEndedQueue-popBack-struct-DoubleEndedQueue-Bytes32Deque-: xref:utils.adoc#DoubleEndedQueue-popBack-struct-DoubleEndedQueue-Bytes32Deque-
 :xref-DoubleEndedQueue-pushFront-struct-DoubleEndedQueue-Bytes32Deque-bytes32-: xref:utils.adoc#DoubleEndedQueue-pushFront-struct-DoubleEndedQueue-Bytes32Deque-bytes32-
@@ -894,7 +894,7 @@ Miscellaneous contracts and libraries containing utility functions you can use t
  * {ERC165}, {ERC165Checker}: Utilities for inspecting interfaces supported by contracts.
  * {BitMaps}: A simple library to manage boolean value mapped to a numerical index in an efficient way.
  * {EnumerableMap}: A type like Solidity's https://solidity.readthedocs.io/en/latest/types.html#mapping-types[`mapping`], but with key-value _enumeration_: this will let you know how many entries a mapping has, and iterate over them (which is not possible with `mapping`).
- * {EnumerableSet}: Like {EnumerableMap}, but for https://en.wikipedia.org/wiki/Set_(abstract_data_type)[sets]. Can be used to store privileged accounts, issued IDs, etc.
+ * {EnumerableSetViewFriendly}: Like {EnumerableMap}, but for https://en.wikipedia.org/wiki/Set_(abstract_data_type)[sets]. Can be used to store privileged accounts, issued IDs, etc.
  * {DoubleEndedQueue}: An implementation of a https://en.wikipedia.org/wiki/Double-ended_queue[double ended queue] whose values can be added or removed from both sides. Useful for FIFO and LIFO structures.
  * {CircularBuffer}: A data structure to store the last N values pushed to it.
  * {Checkpoints}: A data structure to store values mapped to a strictly increasing key. Can be used for storing and accessing values over time.
@@ -925,7 +925,7 @@ Miscellaneous contracts and libraries containing utility functions you can use t
  
 [NOTE]
 ====
-Because Solidity does not support generic types, {EnumerableMap} and {EnumerableSet} are specialized to a limited number of key-value types.
+Because Solidity does not support generic types, {EnumerableMap} and {EnumerableSetViewFriendly} are specialized to a limited number of key-value types.
 ====
 
 == Math
@@ -5462,67 +5462,67 @@ uncallable if the map grows to a point where copying to memory consumes too much
 
 Query for a nonexistent map key.
 
-:Set: pass:normal[xref:#EnumerableSet-Set[`++Set++`]]
-:Bytes32Set: pass:normal[xref:#EnumerableSet-Bytes32Set[`++Bytes32Set++`]]
-:add: pass:normal[xref:#EnumerableSet-add-struct-EnumerableSet-Bytes32Set-bytes32-[`++add++`]]
-:remove: pass:normal[xref:#EnumerableSet-remove-struct-EnumerableSet-Bytes32Set-bytes32-[`++remove++`]]
-:clear: pass:normal[xref:#EnumerableSet-clear-struct-EnumerableSet-Bytes32Set-[`++clear++`]]
-:contains: pass:normal[xref:#EnumerableSet-contains-struct-EnumerableSet-Bytes32Set-bytes32-[`++contains++`]]
-:length: pass:normal[xref:#EnumerableSet-length-struct-EnumerableSet-Bytes32Set-[`++length++`]]
-:at: pass:normal[xref:#EnumerableSet-at-struct-EnumerableSet-Bytes32Set-uint256-[`++at++`]]
-:values: pass:normal[xref:#EnumerableSet-values-struct-EnumerableSet-Bytes32Set-[`++values++`]]
-:limitedValuesFrom: pass:normal[xref:#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256-[`++limitedValuesFrom++`]]
-:AddressSet: pass:normal[xref:#EnumerableSet-AddressSet[`++AddressSet++`]]
-:add: pass:normal[xref:#EnumerableSet-add-struct-EnumerableSet-AddressSet-address-[`++add++`]]
-:remove: pass:normal[xref:#EnumerableSet-remove-struct-EnumerableSet-AddressSet-address-[`++remove++`]]
-:clear: pass:normal[xref:#EnumerableSet-clear-struct-EnumerableSet-AddressSet-[`++clear++`]]
-:contains: pass:normal[xref:#EnumerableSet-contains-struct-EnumerableSet-AddressSet-address-[`++contains++`]]
-:length: pass:normal[xref:#EnumerableSet-length-struct-EnumerableSet-AddressSet-[`++length++`]]
-:at: pass:normal[xref:#EnumerableSet-at-struct-EnumerableSet-AddressSet-uint256-[`++at++`]]
-:values: pass:normal[xref:#EnumerableSet-values-struct-EnumerableSet-AddressSet-[`++values++`]]
-:limitedValuesFrom: pass:normal[xref:#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256-[`++limitedValuesFrom++`]]
-:UintSet: pass:normal[xref:#EnumerableSet-UintSet[`++UintSet++`]]
-:add: pass:normal[xref:#EnumerableSet-add-struct-EnumerableSet-UintSet-uint256-[`++add++`]]
-:remove: pass:normal[xref:#EnumerableSet-remove-struct-EnumerableSet-UintSet-uint256-[`++remove++`]]
-:clear: pass:normal[xref:#EnumerableSet-clear-struct-EnumerableSet-UintSet-[`++clear++`]]
-:contains: pass:normal[xref:#EnumerableSet-contains-struct-EnumerableSet-UintSet-uint256-[`++contains++`]]
-:length: pass:normal[xref:#EnumerableSet-length-struct-EnumerableSet-UintSet-[`++length++`]]
-:at: pass:normal[xref:#EnumerableSet-at-struct-EnumerableSet-UintSet-uint256-[`++at++`]]
-:values: pass:normal[xref:#EnumerableSet-values-struct-EnumerableSet-UintSet-[`++values++`]]
-:limitedValuesFrom: pass:normal[xref:#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256-[`++limitedValuesFrom++`]]
+:Set: pass:normal[xref:#EnumerableSetViewFriendly-Set[`++Set++`]]
+:Bytes32Set: pass:normal[xref:#EnumerableSetViewFriendly-Bytes32Set[`++Bytes32Set++`]]
+:add: pass:normal[xref:#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-[`++add++`]]
+:remove: pass:normal[xref:#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-[`++remove++`]]
+:clear: pass:normal[xref:#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-Bytes32Set-[`++clear++`]]
+:contains: pass:normal[xref:#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-[`++contains++`]]
+:length: pass:normal[xref:#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-Bytes32Set-[`++length++`]]
+:at: pass:normal[xref:#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-[`++at++`]]
+:values: pass:normal[xref:#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-Bytes32Set-[`++values++`]]
+:limitedValuesFrom: pass:normal[xref:#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256-[`++limitedValuesFrom++`]]
+:AddressSet: pass:normal[xref:#EnumerableSetViewFriendly-AddressSet[`++AddressSet++`]]
+:add: pass:normal[xref:#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-AddressSet-address-[`++add++`]]
+:remove: pass:normal[xref:#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-AddressSet-address-[`++remove++`]]
+:clear: pass:normal[xref:#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-AddressSet-[`++clear++`]]
+:contains: pass:normal[xref:#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-AddressSet-address-[`++contains++`]]
+:length: pass:normal[xref:#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-AddressSet-[`++length++`]]
+:at: pass:normal[xref:#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-AddressSet-uint256-[`++at++`]]
+:values: pass:normal[xref:#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-AddressSet-[`++values++`]]
+:limitedValuesFrom: pass:normal[xref:#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256-[`++limitedValuesFrom++`]]
+:UintSet: pass:normal[xref:#EnumerableSetViewFriendly-UintSet[`++UintSet++`]]
+:add: pass:normal[xref:#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++add++`]]
+:remove: pass:normal[xref:#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++remove++`]]
+:clear: pass:normal[xref:#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-UintSet-[`++clear++`]]
+:contains: pass:normal[xref:#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++contains++`]]
+:length: pass:normal[xref:#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-UintSet-[`++length++`]]
+:at: pass:normal[xref:#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++at++`]]
+:values: pass:normal[xref:#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-UintSet-[`++values++`]]
+:limitedValuesFrom: pass:normal[xref:#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256-[`++limitedValuesFrom++`]]
 
-:add-struct-EnumerableSet-Bytes32Set-bytes32: pass:normal[xref:#EnumerableSet-add-struct-EnumerableSet-Bytes32Set-bytes32-[`++add++`]]
-:remove-struct-EnumerableSet-Bytes32Set-bytes32: pass:normal[xref:#EnumerableSet-remove-struct-EnumerableSet-Bytes32Set-bytes32-[`++remove++`]]
-:clear-struct-EnumerableSet-Bytes32Set: pass:normal[xref:#EnumerableSet-clear-struct-EnumerableSet-Bytes32Set-[`++clear++`]]
-:contains-struct-EnumerableSet-Bytes32Set-bytes32: pass:normal[xref:#EnumerableSet-contains-struct-EnumerableSet-Bytes32Set-bytes32-[`++contains++`]]
-:length-struct-EnumerableSet-Bytes32Set: pass:normal[xref:#EnumerableSet-length-struct-EnumerableSet-Bytes32Set-[`++length++`]]
-:at-struct-EnumerableSet-Bytes32Set-uint256: pass:normal[xref:#EnumerableSet-at-struct-EnumerableSet-Bytes32Set-uint256-[`++at++`]]
-:values-struct-EnumerableSet-Bytes32Set: pass:normal[xref:#EnumerableSet-values-struct-EnumerableSet-Bytes32Set-[`++values++`]]
-:limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256: pass:normal[xref:#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256-[`++limitedValuesFrom++`]]
-:add-struct-EnumerableSet-AddressSet-address: pass:normal[xref:#EnumerableSet-add-struct-EnumerableSet-AddressSet-address-[`++add++`]]
-:remove-struct-EnumerableSet-AddressSet-address: pass:normal[xref:#EnumerableSet-remove-struct-EnumerableSet-AddressSet-address-[`++remove++`]]
-:clear-struct-EnumerableSet-AddressSet: pass:normal[xref:#EnumerableSet-clear-struct-EnumerableSet-AddressSet-[`++clear++`]]
-:contains-struct-EnumerableSet-AddressSet-address: pass:normal[xref:#EnumerableSet-contains-struct-EnumerableSet-AddressSet-address-[`++contains++`]]
-:length-struct-EnumerableSet-AddressSet: pass:normal[xref:#EnumerableSet-length-struct-EnumerableSet-AddressSet-[`++length++`]]
-:at-struct-EnumerableSet-AddressSet-uint256: pass:normal[xref:#EnumerableSet-at-struct-EnumerableSet-AddressSet-uint256-[`++at++`]]
-:values-struct-EnumerableSet-AddressSet: pass:normal[xref:#EnumerableSet-values-struct-EnumerableSet-AddressSet-[`++values++`]]
-:limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256: pass:normal[xref:#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256-[`++limitedValuesFrom++`]]
-:add-struct-EnumerableSet-UintSet-uint256: pass:normal[xref:#EnumerableSet-add-struct-EnumerableSet-UintSet-uint256-[`++add++`]]
-:remove-struct-EnumerableSet-UintSet-uint256: pass:normal[xref:#EnumerableSet-remove-struct-EnumerableSet-UintSet-uint256-[`++remove++`]]
-:clear-struct-EnumerableSet-UintSet: pass:normal[xref:#EnumerableSet-clear-struct-EnumerableSet-UintSet-[`++clear++`]]
-:contains-struct-EnumerableSet-UintSet-uint256: pass:normal[xref:#EnumerableSet-contains-struct-EnumerableSet-UintSet-uint256-[`++contains++`]]
-:length-struct-EnumerableSet-UintSet: pass:normal[xref:#EnumerableSet-length-struct-EnumerableSet-UintSet-[`++length++`]]
-:at-struct-EnumerableSet-UintSet-uint256: pass:normal[xref:#EnumerableSet-at-struct-EnumerableSet-UintSet-uint256-[`++at++`]]
-:values-struct-EnumerableSet-UintSet: pass:normal[xref:#EnumerableSet-values-struct-EnumerableSet-UintSet-[`++values++`]]
-:limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256: pass:normal[xref:#EnumerableSet-limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256-[`++limitedValuesFrom++`]]
+:add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32: pass:normal[xref:#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-[`++add++`]]
+:remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32: pass:normal[xref:#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-[`++remove++`]]
+:clear-struct-EnumerableSetViewFriendly-Bytes32Set: pass:normal[xref:#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-Bytes32Set-[`++clear++`]]
+:contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32: pass:normal[xref:#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-[`++contains++`]]
+:length-struct-EnumerableSetViewFriendly-Bytes32Set: pass:normal[xref:#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-Bytes32Set-[`++length++`]]
+:at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256: pass:normal[xref:#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-[`++at++`]]
+:values-struct-EnumerableSetViewFriendly-Bytes32Set: pass:normal[xref:#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-Bytes32Set-[`++values++`]]
+:limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256: pass:normal[xref:#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256-[`++limitedValuesFrom++`]]
+:add-struct-EnumerableSetViewFriendly-AddressSet-address: pass:normal[xref:#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-AddressSet-address-[`++add++`]]
+:remove-struct-EnumerableSetViewFriendly-AddressSet-address: pass:normal[xref:#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-AddressSet-address-[`++remove++`]]
+:clear-struct-EnumerableSetViewFriendly-AddressSet: pass:normal[xref:#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-AddressSet-[`++clear++`]]
+:contains-struct-EnumerableSetViewFriendly-AddressSet-address: pass:normal[xref:#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-AddressSet-address-[`++contains++`]]
+:length-struct-EnumerableSetViewFriendly-AddressSet: pass:normal[xref:#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-AddressSet-[`++length++`]]
+:at-struct-EnumerableSetViewFriendly-AddressSet-uint256: pass:normal[xref:#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-AddressSet-uint256-[`++at++`]]
+:values-struct-EnumerableSetViewFriendly-AddressSet: pass:normal[xref:#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-AddressSet-[`++values++`]]
+:limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256: pass:normal[xref:#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256-[`++limitedValuesFrom++`]]
+:add-struct-EnumerableSetViewFriendly-UintSet-uint256: pass:normal[xref:#EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++add++`]]
+:remove-struct-EnumerableSetViewFriendly-UintSet-uint256: pass:normal[xref:#EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++remove++`]]
+:clear-struct-EnumerableSetViewFriendly-UintSet: pass:normal[xref:#EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-UintSet-[`++clear++`]]
+:contains-struct-EnumerableSetViewFriendly-UintSet-uint256: pass:normal[xref:#EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++contains++`]]
+:length-struct-EnumerableSetViewFriendly-UintSet: pass:normal[xref:#EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-UintSet-[`++length++`]]
+:at-struct-EnumerableSetViewFriendly-UintSet-uint256: pass:normal[xref:#EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-UintSet-uint256-[`++at++`]]
+:values-struct-EnumerableSetViewFriendly-UintSet: pass:normal[xref:#EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-UintSet-[`++values++`]]
+:limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256: pass:normal[xref:#EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256-[`++limitedValuesFrom++`]]
 
 [.contract]
-[[EnumerableSet]]
-=== `++EnumerableSet++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/utils/structs/EnumerableSet.sol[{github-icon},role=heading-link]
+[[EnumerableSetViewFriendly]]
+=== `++EnumerableSetViewFriendly++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/utils/structs/EnumerableSetViewFriendly.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
-import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSetViewFriendly.sol";
 ```
 
 Library for managing
@@ -5539,10 +5539,10 @@ Sets have the following properties:
 ```solidity
 contract Example {
     // Add the library methods
-    using EnumerableSet for EnumerableSet.AddressSet;
+    using EnumerableSetViewFriendly for EnumerableSetViewFriendly.AddressSet;
 
     // Declare a set state variable
-    EnumerableSet.AddressSet private mySet;
+    EnumerableSetViewFriendly.AddressSet private mySet;
 }
 ```
 
@@ -5555,43 +5555,43 @@ Trying to delete such a structure from storage will likely result in data corrup
 unusable.
 See https://github.com/ethereum/solidity/pull/11843[ethereum/solidity#11843] for more info.
 
-In order to clean an EnumerableSet, you can either remove all elements one by one or create a fresh instance using an
-array of EnumerableSet.
+In order to clean an EnumerableSetViewFriendly, you can either remove all elements one by one or create a fresh instance using an
+array of EnumerableSetViewFriendly.
 ====
 
 [.contract-index]
 .Functions
 --
-* {xref-EnumerableSet-add-struct-EnumerableSet-Bytes32Set-bytes32-}[`++add(set, value)++`]
-* {xref-EnumerableSet-remove-struct-EnumerableSet-Bytes32Set-bytes32-}[`++remove(set, value)++`]
-* {xref-EnumerableSet-clear-struct-EnumerableSet-Bytes32Set-}[`++clear(set)++`]
-* {xref-EnumerableSet-contains-struct-EnumerableSet-Bytes32Set-bytes32-}[`++contains(set, value)++`]
-* {xref-EnumerableSet-length-struct-EnumerableSet-Bytes32Set-}[`++length(set)++`]
-* {xref-EnumerableSet-at-struct-EnumerableSet-Bytes32Set-uint256-}[`++at(set, index)++`]
-* {xref-EnumerableSet-values-struct-EnumerableSet-Bytes32Set-}[`++values(set)++`]
-* {xref-EnumerableSet-limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256-}[`++limitedValuesFrom(set, limit, offset)++`]
-* {xref-EnumerableSet-add-struct-EnumerableSet-AddressSet-address-}[`++add(set, value)++`]
-* {xref-EnumerableSet-remove-struct-EnumerableSet-AddressSet-address-}[`++remove(set, value)++`]
-* {xref-EnumerableSet-clear-struct-EnumerableSet-AddressSet-}[`++clear(set)++`]
-* {xref-EnumerableSet-contains-struct-EnumerableSet-AddressSet-address-}[`++contains(set, value)++`]
-* {xref-EnumerableSet-length-struct-EnumerableSet-AddressSet-}[`++length(set)++`]
-* {xref-EnumerableSet-at-struct-EnumerableSet-AddressSet-uint256-}[`++at(set, index)++`]
-* {xref-EnumerableSet-values-struct-EnumerableSet-AddressSet-}[`++values(set)++`]
-* {xref-EnumerableSet-limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256-}[`++limitedValuesFrom(set, limit, offset)++`]
-* {xref-EnumerableSet-add-struct-EnumerableSet-UintSet-uint256-}[`++add(set, value)++`]
-* {xref-EnumerableSet-remove-struct-EnumerableSet-UintSet-uint256-}[`++remove(set, value)++`]
-* {xref-EnumerableSet-clear-struct-EnumerableSet-UintSet-}[`++clear(set)++`]
-* {xref-EnumerableSet-contains-struct-EnumerableSet-UintSet-uint256-}[`++contains(set, value)++`]
-* {xref-EnumerableSet-length-struct-EnumerableSet-UintSet-}[`++length(set)++`]
-* {xref-EnumerableSet-at-struct-EnumerableSet-UintSet-uint256-}[`++at(set, index)++`]
-* {xref-EnumerableSet-values-struct-EnumerableSet-UintSet-}[`++values(set)++`]
-* {xref-EnumerableSet-limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256-}[`++limitedValuesFrom(set, limit, offset)++`]
+* {xref-EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-}[`++add(set, value)++`]
+* {xref-EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-}[`++remove(set, value)++`]
+* {xref-EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-Bytes32Set-}[`++clear(set)++`]
+* {xref-EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-}[`++contains(set, value)++`]
+* {xref-EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-Bytes32Set-}[`++length(set)++`]
+* {xref-EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-}[`++at(set, index)++`]
+* {xref-EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-Bytes32Set-}[`++values(set)++`]
+* {xref-EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256-}[`++limitedValuesFrom(set, limit, offset)++`]
+* {xref-EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-AddressSet-address-}[`++add(set, value)++`]
+* {xref-EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-AddressSet-address-}[`++remove(set, value)++`]
+* {xref-EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-AddressSet-}[`++clear(set)++`]
+* {xref-EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-AddressSet-address-}[`++contains(set, value)++`]
+* {xref-EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-AddressSet-}[`++length(set)++`]
+* {xref-EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-AddressSet-uint256-}[`++at(set, index)++`]
+* {xref-EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-AddressSet-}[`++values(set)++`]
+* {xref-EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256-}[`++limitedValuesFrom(set, limit, offset)++`]
+* {xref-EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-UintSet-uint256-}[`++add(set, value)++`]
+* {xref-EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-UintSet-uint256-}[`++remove(set, value)++`]
+* {xref-EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-UintSet-}[`++clear(set)++`]
+* {xref-EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-UintSet-uint256-}[`++contains(set, value)++`]
+* {xref-EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-UintSet-}[`++length(set)++`]
+* {xref-EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-UintSet-uint256-}[`++at(set, index)++`]
+* {xref-EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-UintSet-}[`++values(set)++`]
+* {xref-EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256-}[`++limitedValuesFrom(set, limit, offset)++`]
 
 --
 
 [.contract-item]
-[[EnumerableSet-add-struct-EnumerableSet-Bytes32Set-bytes32-]]
-==== `[.contract-item-name]#++add++#++(struct EnumerableSet.Bytes32Set set, bytes32 value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-]]
+==== `[.contract-item-name]#++add++#++(struct EnumerableSetViewFriendly.Bytes32Set set, bytes32 value) → bool++` [.item-kind]#internal#
 
 Add a value to a set. O(1).
 
@@ -5599,8 +5599,8 @@ Returns true if the value was added to the set, that is if it was not
 already present.
 
 [.contract-item]
-[[EnumerableSet-remove-struct-EnumerableSet-Bytes32Set-bytes32-]]
-==== `[.contract-item-name]#++remove++#++(struct EnumerableSet.Bytes32Set set, bytes32 value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-]]
+==== `[.contract-item-name]#++remove++#++(struct EnumerableSetViewFriendly.Bytes32Set set, bytes32 value) → bool++` [.item-kind]#internal#
 
 Removes a value from a set. O(1).
 
@@ -5608,8 +5608,8 @@ Returns true if the value was removed from the set, that is if it was
 present.
 
 [.contract-item]
-[[EnumerableSet-clear-struct-EnumerableSet-Bytes32Set-]]
-==== `[.contract-item-name]#++clear++#++(struct EnumerableSet.Bytes32Set set)++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-Bytes32Set-]]
+==== `[.contract-item-name]#++clear++#++(struct EnumerableSetViewFriendly.Bytes32Set set)++` [.item-kind]#internal#
 
 Removes all the values from a set. O(n).
 
@@ -5617,20 +5617,20 @@ WARNING: Developers should keep in mind that this function has an unbounded cost
 function uncallable if the set grows to the point where clearing it consumes too much gas to fit in a block.
 
 [.contract-item]
-[[EnumerableSet-contains-struct-EnumerableSet-Bytes32Set-bytes32-]]
-==== `[.contract-item-name]#++contains++#++(struct EnumerableSet.Bytes32Set set, bytes32 value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-Bytes32Set-bytes32-]]
+==== `[.contract-item-name]#++contains++#++(struct EnumerableSetViewFriendly.Bytes32Set set, bytes32 value) → bool++` [.item-kind]#internal#
 
 Returns true if the value is in the set. O(1).
 
 [.contract-item]
-[[EnumerableSet-length-struct-EnumerableSet-Bytes32Set-]]
-==== `[.contract-item-name]#++length++#++(struct EnumerableSet.Bytes32Set set) → uint256++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-Bytes32Set-]]
+==== `[.contract-item-name]#++length++#++(struct EnumerableSetViewFriendly.Bytes32Set set) → uint256++` [.item-kind]#internal#
 
 Returns the number of values in the set. O(1).
 
 [.contract-item]
-[[EnumerableSet-at-struct-EnumerableSet-Bytes32Set-uint256-]]
-==== `[.contract-item-name]#++at++#++(struct EnumerableSet.Bytes32Set set, uint256 index) → bytes32++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-]]
+==== `[.contract-item-name]#++at++#++(struct EnumerableSetViewFriendly.Bytes32Set set, uint256 index) → bytes32++` [.item-kind]#internal#
 
 Returns the value stored at position `index` in the set. O(1).
 
@@ -5642,8 +5642,8 @@ Requirements:
 - `index` must be strictly less than {length}.
 
 [.contract-item]
-[[EnumerableSet-values-struct-EnumerableSet-Bytes32Set-]]
-==== `[.contract-item-name]#++values++#++(struct EnumerableSet.Bytes32Set set) → bytes32[]++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-Bytes32Set-]]
+==== `[.contract-item-name]#++values++#++(struct EnumerableSetViewFriendly.Bytes32Set set) → bytes32[]++` [.item-kind]#internal#
 
 Return the entire set in an array
 
@@ -5653,14 +5653,14 @@ this function has an unbounded cost, and using it as part of a state-changing fu
 uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.
 
 [.contract-item]
-[[EnumerableSet-limitedValuesFrom-struct-EnumerableSet-Bytes32Set-uint256-uint256-]]
-==== `[.contract-item-name]#++limitedValuesFrom++#++(struct EnumerableSet.Bytes32Set set, uint256 limit, uint256 offset) → bytes32[]++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-Bytes32Set-uint256-uint256-]]
+==== `[.contract-item-name]#++limitedValuesFrom++#++(struct EnumerableSetViewFriendly.Bytes32Set set, uint256 limit, uint256 offset) → bytes32[]++` [.item-kind]#internal#
 
 Returns a limited number of values from a set, starting from an offset.
 
 [.contract-item]
-[[EnumerableSet-add-struct-EnumerableSet-AddressSet-address-]]
-==== `[.contract-item-name]#++add++#++(struct EnumerableSet.AddressSet set, address value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-AddressSet-address-]]
+==== `[.contract-item-name]#++add++#++(struct EnumerableSetViewFriendly.AddressSet set, address value) → bool++` [.item-kind]#internal#
 
 Add a value to a set. O(1).
 
@@ -5668,8 +5668,8 @@ Returns true if the value was added to the set, that is if it was not
 already present.
 
 [.contract-item]
-[[EnumerableSet-remove-struct-EnumerableSet-AddressSet-address-]]
-==== `[.contract-item-name]#++remove++#++(struct EnumerableSet.AddressSet set, address value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-AddressSet-address-]]
+==== `[.contract-item-name]#++remove++#++(struct EnumerableSetViewFriendly.AddressSet set, address value) → bool++` [.item-kind]#internal#
 
 Removes a value from a set. O(1).
 
@@ -5677,8 +5677,8 @@ Returns true if the value was removed from the set, that is if it was
 present.
 
 [.contract-item]
-[[EnumerableSet-clear-struct-EnumerableSet-AddressSet-]]
-==== `[.contract-item-name]#++clear++#++(struct EnumerableSet.AddressSet set)++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-AddressSet-]]
+==== `[.contract-item-name]#++clear++#++(struct EnumerableSetViewFriendly.AddressSet set)++` [.item-kind]#internal#
 
 Removes all the values from a set. O(n).
 
@@ -5686,20 +5686,20 @@ WARNING: Developers should keep in mind that this function has an unbounded cost
 function uncallable if the set grows to the point where clearing it consumes too much gas to fit in a block.
 
 [.contract-item]
-[[EnumerableSet-contains-struct-EnumerableSet-AddressSet-address-]]
-==== `[.contract-item-name]#++contains++#++(struct EnumerableSet.AddressSet set, address value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-AddressSet-address-]]
+==== `[.contract-item-name]#++contains++#++(struct EnumerableSetViewFriendly.AddressSet set, address value) → bool++` [.item-kind]#internal#
 
 Returns true if the value is in the set. O(1).
 
 [.contract-item]
-[[EnumerableSet-length-struct-EnumerableSet-AddressSet-]]
-==== `[.contract-item-name]#++length++#++(struct EnumerableSet.AddressSet set) → uint256++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-AddressSet-]]
+==== `[.contract-item-name]#++length++#++(struct EnumerableSetViewFriendly.AddressSet set) → uint256++` [.item-kind]#internal#
 
 Returns the number of values in the set. O(1).
 
 [.contract-item]
-[[EnumerableSet-at-struct-EnumerableSet-AddressSet-uint256-]]
-==== `[.contract-item-name]#++at++#++(struct EnumerableSet.AddressSet set, uint256 index) → address++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-AddressSet-uint256-]]
+==== `[.contract-item-name]#++at++#++(struct EnumerableSetViewFriendly.AddressSet set, uint256 index) → address++` [.item-kind]#internal#
 
 Returns the value stored at position `index` in the set. O(1).
 
@@ -5711,8 +5711,8 @@ Requirements:
 - `index` must be strictly less than {length}.
 
 [.contract-item]
-[[EnumerableSet-values-struct-EnumerableSet-AddressSet-]]
-==== `[.contract-item-name]#++values++#++(struct EnumerableSet.AddressSet set) → address[]++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-AddressSet-]]
+==== `[.contract-item-name]#++values++#++(struct EnumerableSetViewFriendly.AddressSet set) → address[]++` [.item-kind]#internal#
 
 Return the entire set in an array
 
@@ -5722,14 +5722,14 @@ this function has an unbounded cost, and using it as part of a state-changing fu
 uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.
 
 [.contract-item]
-[[EnumerableSet-limitedValuesFrom-struct-EnumerableSet-AddressSet-uint256-uint256-]]
-==== `[.contract-item-name]#++limitedValuesFrom++#++(struct EnumerableSet.AddressSet set, uint256 limit, uint256 offset) → address[]++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-AddressSet-uint256-uint256-]]
+==== `[.contract-item-name]#++limitedValuesFrom++#++(struct EnumerableSetViewFriendly.AddressSet set, uint256 limit, uint256 offset) → address[]++` [.item-kind]#internal#
 
 Returns a limited number of values from a set, starting from an offset.
 
 [.contract-item]
-[[EnumerableSet-add-struct-EnumerableSet-UintSet-uint256-]]
-==== `[.contract-item-name]#++add++#++(struct EnumerableSet.UintSet set, uint256 value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-add-struct-EnumerableSetViewFriendly-UintSet-uint256-]]
+==== `[.contract-item-name]#++add++#++(struct EnumerableSetViewFriendly.UintSet set, uint256 value) → bool++` [.item-kind]#internal#
 
 Add a value to a set. O(1).
 
@@ -5737,8 +5737,8 @@ Returns true if the value was added to the set, that is if it was not
 already present.
 
 [.contract-item]
-[[EnumerableSet-remove-struct-EnumerableSet-UintSet-uint256-]]
-==== `[.contract-item-name]#++remove++#++(struct EnumerableSet.UintSet set, uint256 value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-remove-struct-EnumerableSetViewFriendly-UintSet-uint256-]]
+==== `[.contract-item-name]#++remove++#++(struct EnumerableSetViewFriendly.UintSet set, uint256 value) → bool++` [.item-kind]#internal#
 
 Removes a value from a set. O(1).
 
@@ -5746,8 +5746,8 @@ Returns true if the value was removed from the set, that is if it was
 present.
 
 [.contract-item]
-[[EnumerableSet-clear-struct-EnumerableSet-UintSet-]]
-==== `[.contract-item-name]#++clear++#++(struct EnumerableSet.UintSet set)++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-clear-struct-EnumerableSetViewFriendly-UintSet-]]
+==== `[.contract-item-name]#++clear++#++(struct EnumerableSetViewFriendly.UintSet set)++` [.item-kind]#internal#
 
 Removes all the values from a set. O(n).
 
@@ -5755,20 +5755,20 @@ WARNING: Developers should keep in mind that this function has an unbounded cost
 function uncallable if the set grows to the point where clearing it consumes too much gas to fit in a block.
 
 [.contract-item]
-[[EnumerableSet-contains-struct-EnumerableSet-UintSet-uint256-]]
-==== `[.contract-item-name]#++contains++#++(struct EnumerableSet.UintSet set, uint256 value) → bool++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-contains-struct-EnumerableSetViewFriendly-UintSet-uint256-]]
+==== `[.contract-item-name]#++contains++#++(struct EnumerableSetViewFriendly.UintSet set, uint256 value) → bool++` [.item-kind]#internal#
 
 Returns true if the value is in the set. O(1).
 
 [.contract-item]
-[[EnumerableSet-length-struct-EnumerableSet-UintSet-]]
-==== `[.contract-item-name]#++length++#++(struct EnumerableSet.UintSet set) → uint256++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-length-struct-EnumerableSetViewFriendly-UintSet-]]
+==== `[.contract-item-name]#++length++#++(struct EnumerableSetViewFriendly.UintSet set) → uint256++` [.item-kind]#internal#
 
 Returns the number of values in the set. O(1).
 
 [.contract-item]
-[[EnumerableSet-at-struct-EnumerableSet-UintSet-uint256-]]
-==== `[.contract-item-name]#++at++#++(struct EnumerableSet.UintSet set, uint256 index) → uint256++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-at-struct-EnumerableSetViewFriendly-UintSet-uint256-]]
+==== `[.contract-item-name]#++at++#++(struct EnumerableSetViewFriendly.UintSet set, uint256 index) → uint256++` [.item-kind]#internal#
 
 Returns the value stored at position `index` in the set. O(1).
 
@@ -5780,8 +5780,8 @@ Requirements:
 - `index` must be strictly less than {length}.
 
 [.contract-item]
-[[EnumerableSet-values-struct-EnumerableSet-UintSet-]]
-==== `[.contract-item-name]#++values++#++(struct EnumerableSet.UintSet set) → uint256[]++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-values-struct-EnumerableSetViewFriendly-UintSet-]]
+==== `[.contract-item-name]#++values++#++(struct EnumerableSetViewFriendly.UintSet set) → uint256[]++` [.item-kind]#internal#
 
 Return the entire set in an array
 
@@ -5791,8 +5791,8 @@ this function has an unbounded cost, and using it as part of a state-changing fu
 uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.
 
 [.contract-item]
-[[EnumerableSet-limitedValuesFrom-struct-EnumerableSet-UintSet-uint256-uint256-]]
-==== `[.contract-item-name]#++limitedValuesFrom++#++(struct EnumerableSet.UintSet set, uint256 limit, uint256 offset) → uint256[]++` [.item-kind]#internal#
+[[EnumerableSetViewFriendly-limitedValuesFrom-struct-EnumerableSetViewFriendly-UintSet-uint256-uint256-]]
+==== `[.contract-item-name]#++limitedValuesFrom++#++(struct EnumerableSetViewFriendly.UintSet set, uint256 limit, uint256 offset) → uint256[]++` [.item-kind]#internal#
 
 Returns a limited number of values from a set, starting from an offset.
 

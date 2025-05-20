@@ -2,12 +2,12 @@
 
 pragma solidity ^0.8.20;
 
-import {EnumerableSet} from "../patched/utils/structs/EnumerableSet.sol";
+import {EnumerableSetViewFriendly} from "../patched/utils/structs/EnumerableSetViewFriendly.sol";
 
-contract EnumerableSetHarness {
-    using EnumerableSet for EnumerableSet.Bytes32Set;
+contract EnumerableSetViewFriendlyHarness {
+    using EnumerableSetViewFriendly for EnumerableSetViewFriendly.Bytes32Set;
 
-    EnumerableSet.Bytes32Set private _set;
+    EnumerableSetViewFriendly.Bytes32Set private _set;
 
     function add(bytes32 value) public returns (bool) {
         return _set.add(value);

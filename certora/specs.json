@@ -87,9 +87,9 @@
     "files": ["certora/harnesses/InitializableHarness.sol"]
   },
   {
-    "spec": "EnumerableSet",
-    "contract": "EnumerableSetHarness",
-    "files": ["certora/harnesses/EnumerableSetHarness.sol"]
+    "spec": "EnumerableSetViewFriendly",
+    "contract": "EnumerableSetViewFriendlyHarness",
+    "files": ["certora/harnesses/EnumerableSetViewFriendlyHarness.sol"]
   },
   {
     "spec": "EnumerableMap",
