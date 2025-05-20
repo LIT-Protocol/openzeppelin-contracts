@@ -1,7 +1,7 @@
 {
   "name": "@lit-protocol/openzeppelin-contracts",
   "description": "Secure Smart Contract library for Solidity",
-  "version": "5.3.1",
+  "version": "5.4.0",
   "files": [
     "**/*.sol",
     "/build/contracts/*.json",
