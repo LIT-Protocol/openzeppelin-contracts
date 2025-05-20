@@ -54,7 +54,7 @@ invariant atUniqueness(uint256 index1, uint256 index2)
 │                                                                                                                     │
 │ Note that the two consistencyXxx invariants, put together, prove that at_ and _positionOf are inverse of one        │
 │ another. This proves that we have a bijection between indices (the enumerability part) and keys (the entries that   │
-│ are added and removed from the EnumerableSet).                                                                      │
+│ are added and removed from the EnumerableSetViewFriendly).                                                                      │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 invariant consistencyIndex(uint256 index)
@@ -138,7 +138,7 @@ rule liveness_2(uint256 index) {
 
 /*
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ Rule: add key to EnumerableSet if not already contained                                                             │
+│ Rule: add key to EnumerableSetViewFriendly if not already contained                                                             │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 rule add(bytes32 key, bytes32 otherKey) {
@@ -169,7 +169,7 @@ rule add(bytes32 key, bytes32 otherKey) {
 
 /*
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ Rule: remove key from EnumerableSet if already contained                                                            │
+│ Rule: remove key from EnumerableSetViewFriendly if already contained                                                            │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 rule remove(bytes32 key, bytes32 otherKey) {

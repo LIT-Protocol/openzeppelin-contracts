@@ -5,16 +5,16 @@ pragma solidity ^0.8.20;
 
 import {IAccessControlEnumerable} from "./IAccessControlEnumerable.sol";
 import {AccessControl} from "../AccessControl.sol";
-import {EnumerableSet} from "../../utils/structs/EnumerableSet.sol";
+import {EnumerableSetViewFriendly} from "../../utils/structs/EnumerableSetViewFriendly.sol";
 import {IERC165} from "../../utils/introspection/ERC165.sol";
 
 /**
  * @dev Extension of {AccessControl} that allows enumerating the members of each role.
  */
 abstract contract AccessControlEnumerable is IAccessControlEnumerable, AccessControl {
-    using EnumerableSet for EnumerableSet.AddressSet;
+    using EnumerableSetViewFriendly for EnumerableSetViewFriendly.AddressSet;
 
-    mapping(bytes32 role => EnumerableSet.AddressSet) private _roleMembers;
+    mapping(bytes32 role => EnumerableSetViewFriendly.AddressSet) private _roleMembers;
 
     /// @inheritdoc IERC165
     function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {

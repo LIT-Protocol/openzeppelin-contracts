@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.3.0) (utils/structs/EnumerableSet.sol)
-// This file was procedurally generated from scripts/generate/templates/EnumerableSet.js.
+// OpenZeppelin Contracts (last updated v5.3.0) (utils/structs/EnumerableSetViewFriendly.sol)
+// This file was procedurally generated from scripts/generate/templates/EnumerableSetViewFriendly.js.
 
 pragma solidity ^0.8.20;
 
@@ -21,10 +21,10 @@ import {Arrays} from "../Arrays.sol";
  * ```solidity
  * contract Example {
  *     // Add the library methods
- *     using EnumerableSet for EnumerableSet.AddressSet;
+ *     using EnumerableSetViewFriendly for EnumerableSetViewFriendly.AddressSet;
  *
  *     // Declare a set state variable
- *     EnumerableSet.AddressSet private mySet;
+ *     EnumerableSetViewFriendly.AddressSet private mySet;
  * }
  * ```
  *
@@ -37,11 +37,11 @@ import {Arrays} from "../Arrays.sol";
  * unusable.
  * See https://github.com/ethereum/solidity/pull/11843[ethereum/solidity#11843] for more info.
  *
- * In order to clean an EnumerableSet, you can either remove all elements one by one or create a fresh instance using an
- * array of EnumerableSet.
+ * In order to clean an EnumerableSetViewFriendly, you can either remove all elements one by one or create a fresh instance using an
+ * array of EnumerableSetViewFriendly.
  * ====
  */
-library EnumerableSet {
+library EnumerableSetViewFriendly {
     // To implement this library for multiple types with as little code
     // repetition as possible, we write it in terms of a generic Set type with
     // bytes32 values.

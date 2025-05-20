@@ -186,7 +186,7 @@ Some use cases require more powerful data structures than arrays and mappings of
 - xref:api:utils.adoc#BitMaps[`BitMaps`]: Store packed booleans in storage.
 - xref:api:utils.adoc#Checkpoints[`Checkpoints`]: Checkpoint values with built-in lookups.
 - xref:api:utils.adoc#DoubleEndedQueue[`DoubleEndedQueue`]: Store items in a queue with `pop()` and `queue()` constant time operations.
-- xref:api:utils.adoc#EnumerableSet[`EnumerableSet`]: A https://en.wikipedia.org/wiki/Set_(abstract_data_type)[set] with enumeration capabilities.
+- xref:api:utils.adoc#EnumerableSetViewFriendly[`EnumerableSetViewFriendly`]: A https://en.wikipedia.org/wiki/Set_(abstract_data_type)[set] with enumeration capabilities.
 - xref:api:utils.adoc#EnumerableMap[`EnumerableMap`]: A `mapping` variant with enumeration capabilities.
 - xref:api:utils.adoc#MerkleTree[`MerkleTree`]: An on-chain https://wikipedia.org/wiki/Merkle_Tree[Merkle Tree] with helper functions.
 - xref:api:utils.adoc#Heap.sol[`Heap`]: A 
