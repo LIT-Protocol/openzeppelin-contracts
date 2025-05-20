@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.3.0) (utils/structs/EnumerableSetViewFriendly.sol)
+// OpenZeppelin Contracts (last updated v5.4.0) (utils/structs/EnumerableSetViewFriendly.sol)
 // This file was procedurally generated from scripts/generate/templates/EnumerableSetViewFriendly.js.
 
 pragma solidity ^0.8.20;

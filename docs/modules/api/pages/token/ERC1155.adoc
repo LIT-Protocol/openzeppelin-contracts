@@ -273,7 +273,7 @@ NOTE: This core set of contracts is designed to be unopinionated, allowing devel
 
 [.contract]
 [[IERC1155]]
-=== `++IERC1155++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/IERC1155.sol[{github-icon},role=heading-link]
+=== `++IERC1155++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/IERC1155.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -424,7 +424,7 @@ returned by {IERC1155MetadataURI-uri}.
 
 [.contract]
 [[IERC1155MetadataURI]]
-=== `++IERC1155MetadataURI++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol[{github-icon},role=heading-link]
+=== `++IERC1155MetadataURI++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -521,7 +521,7 @@ clients with the actual token type ID.
 
 [.contract]
 [[ERC1155]]
-=== `++ERC1155++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/ERC1155.sol[{github-icon},role=heading-link]
+=== `++ERC1155++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/ERC1155.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -887,7 +887,7 @@ Requirements:
 
 [.contract]
 [[IERC1155Receiver]]
-=== `++IERC1155Receiver++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/IERC1155Receiver.sol[{github-icon},role=heading-link]
+=== `++IERC1155Receiver++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/IERC1155Receiver.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -940,7 +940,7 @@ NOTE: To accept the transfer(s), this must return
 
 [.contract]
 [[ERC1155Pausable]]
-=== `++ERC1155Pausable++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/extensions/ERC1155Pausable.sol[{github-icon},role=heading-link]
+=== `++ERC1155Pausable++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/extensions/ERC1155Pausable.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1096,7 +1096,7 @@ Requirements:
 
 [.contract]
 [[ERC1155Burnable]]
-=== `++ERC1155Burnable++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/extensions/ERC1155Burnable.sol[{github-icon},role=heading-link]
+=== `++ERC1155Burnable++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/extensions/ERC1155Burnable.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1229,7 +1229,7 @@ own tokens and those that they have been approved to use.
 
 [.contract]
 [[ERC1155Supply]]
-=== `++ERC1155Supply++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/extensions/ERC1155Supply.sol[{github-icon},role=heading-link]
+=== `++ERC1155Supply++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/extensions/ERC1155Supply.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1397,7 +1397,7 @@ NOTE: The ERC-1155 acceptance check is not performed in this function. See {_upd
 
 [.contract]
 [[ERC1155URIStorage]]
-=== `++ERC1155URIStorage++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/extensions/ERC1155URIStorage.sol[{github-icon},role=heading-link]
+=== `++ERC1155URIStorage++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/extensions/ERC1155URIStorage.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1555,7 +1555,7 @@ Sets `baseURI` as the `_baseURI` for all tokens
 
 [.contract]
 [[ERC1155Holder]]
-=== `++ERC1155Holder++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/utils/ERC1155Holder.sol[{github-icon},role=heading-link]
+=== `++ERC1155Holder++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/utils/ERC1155Holder.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -1612,7 +1612,7 @@ This function call must use less than 30 000 gas.
 
 [.contract]
 [[ERC1155Utils]]
-=== `++ERC1155Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/token/ERC1155/utils/ERC1155Utils.sol[{github-icon},role=heading-link]
+=== `++ERC1155Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/token/ERC1155/utils/ERC1155Utils.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity

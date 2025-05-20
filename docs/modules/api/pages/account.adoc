@@ -108,7 +108,7 @@ This directory includes contracts to build accounts for ERC-4337.
 
 [.contract]
 [[ERC4337Utils]]
-=== `++ERC4337Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/account/utils/draft-ERC4337Utils.sol[{github-icon},role=heading-link]
+=== `++ERC4337Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/account/utils/draft-ERC4337Utils.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
@@ -320,7 +320,7 @@ For simulation purposes, validateUserOp (and validatePaymasterUserOp) must retur
 
 [.contract]
 [[ERC7579Utils]]
-=== `++ERC7579Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.3.1/contracts/account/utils/draft-ERC7579Utils.sol[{github-icon},role=heading-link]
+=== `++ERC7579Utils++` link:https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.4.0/contracts/account/utils/draft-ERC7579Utils.sol[{github-icon},role=heading-link]
 
 [.hljs-theme-light.nopadding]
 ```solidity
